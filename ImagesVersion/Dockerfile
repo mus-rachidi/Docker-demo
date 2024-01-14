@@ -8,8 +8,8 @@ WORKDIR /app
 COPY index.html .
 
 # Expose port 80 for the web server
-EXPOSE 80
+EXPOSE 8080
 
 # Start a simple Python HTTP server
-CMD ["python", "-m", "http.server", "80"]
+CMD ["python", "-m", "http.server", "8080"]
 
